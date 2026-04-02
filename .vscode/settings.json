@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "notebook.formatOnSave.enabled": true,
+    "css.format.spaceAroundSelectorSeparator": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
