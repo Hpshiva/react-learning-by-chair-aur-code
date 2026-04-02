@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card() {
   return (
-    <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-700 dark:border-gray-700">
       <a href="/">
         <img
           className="p-8 rounded-t-lg"
@@ -11,9 +11,7 @@ export default function Card() {
         />
       </a>
       <div className="px-5 pb-5">
-        <div className="bg-white dark:bg-black text-black dark:text-white p-5">
-          Dark mode test
-        </div>
+        
         <a href="/">
           <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
             Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
