@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Cards({ desc, name, age, isOnline, btnHandle }) {
+function Cards({ desc, name, age, isOnline, btnHandle, btndelete }) {
   //props then  {props.name}
   const [toggle, setToggle] = useState(true);
   // later we have destructing with {items, items,items}
@@ -23,7 +23,13 @@ function Cards({ desc, name, age, isOnline, btnHandle }) {
           onClick={btnHandle}
           className=" mt-3 rounded-md px-5 py-2 bg-blue-300"
         >
-          CLick me !
+          Click me !
+        </button>
+        <button
+          onClick={btndelete}
+          className=" mt-3 rounded-md px-5 py-2 bg-blue-500"
+        >
+          Delete me !
         </button>
       </div>
     </>

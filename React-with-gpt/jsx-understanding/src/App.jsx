@@ -4,14 +4,16 @@ import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import Form from "./Components/Form";
+import StateLearning from "./Components/StateLearning";
 
 function App() {
   const [counter, setCounter] = useState(0);
   const [name, setName] = useState("");
+  const [user, setUser] = useState(true);
   return (
     <>
-      <div className="w-full text-white h-screen p-[2rem] bg-red-500">
-        <Navbar />
+      <div className="w-full text-white h-full p-[2rem] bg-red-500">
+        {user && <Navbar />}
         <Hero />
         <Footer />
         <div className="p-4 bg-pink-400 rounded-md w-fit">
@@ -52,6 +54,9 @@ function App() {
 
         <div className="mt-3">
           <Form />
+        </div>
+        <div className="mt-[3rem] p-4 bg-orange-200 text-black rounded-md w-fit">
+          <StateLearning />
         </div>
       </div>
     </>
