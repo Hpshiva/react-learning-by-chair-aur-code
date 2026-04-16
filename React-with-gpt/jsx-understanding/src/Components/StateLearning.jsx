@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function StateLearning() {
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
   const [counter, setCounter] = useState(0);
+  useEffect(() => {
+    console.log(`shiva`, counter);
+  }, [counter]);
 
   return (
     <div className="flex flex-col gap-4">
